@@ -1,0 +1,398 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard</title>
+    <link rel="stylesheet" href="DBstyle.css">
+    <link rel="stylesheet" href="Pstyle.css">
+    <link rel="stylesheet" href="line-awesome-1.3.0/1.3.0/css/line-awesome.css">
+    <script src="toggleSide.js"></script>
+    <script src = "Chart.js-3.3.2/Chart.js-3.3.2/package/dist/chart.js"></script>
+</head>
+
+<body>
+    <div class="sidebar" id="sidebar">
+        <div class="sidebar-brand" id="sideBrand">
+            <h2>
+                <div class="logo">
+                    <img src="icons/icons8_medical_doctor_64.png">
+                </div>
+                <div class="sideB-text">
+                    <h3>Welcome ,</h3>
+                    <h3>Dr. Chandler Bing</h3>
+                </div>
+            </h2>
+        </div>
+        <div class="status" id = "Status">
+            <div class="exp1">
+                <h3>Exp</h3>
+                <h2>14</h2>
+            </div>
+            <div class="exp2">
+                <h3>Awards</h3>
+                <h2>13</h2>
+            </div>
+            <div class="exp">
+                <h3>Clients</h3>
+                <h2>213</h2>
+            </div>
+        </div>
+        <div class="sidebar-menu" id="SideMenu">
+            <ul>
+                <li>
+                    <a href="dashboard.html" class="active"><span class="la la-dashboard"></span><span>Dashboard</span></a>
+                </li>
+                <li>
+                    <a href="appointment.html"> <span class="la la-clipboard-list"></span><span>Appointment</span></a>
+                </li>
+                <li>
+                    <button class="dropdown-btn"><span class="la la-user-injured"></span><span>Patients</span>
+                    </button>
+                    <div class="dropdown-container">
+                        <a href="allPatients.html">- All Patient</a>
+                        <a href="patientHistory.html">- Patient History</a>
+                        <a href="addPatient.html">- Add Patient</a>
+                    </div>
+                </li>
+                <li>
+                <li>
+                    <button class="dropdown-btn"><span class= "la la-user-nurse"></span><span>Doctors</span>
+                    </button>
+                    <div class="dropdown-container">
+                        <a href="allDoctors.html">- All Doctors</a>
+                        <a href="addDoctors.html">- Add Doctors</a>
+                    </div>
+                </li>
+                <li>
+                    <a href="bill.html"><span class="la la la-money-bill"></span><span>Bill</span></a>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <div class="main-content" >
+        <div class="header" id="header">
+            <div class="menuSearch">
+                <div class="toggle" onclick="toggleMenu()" id="toggle">
+                    <span class="la la-bars">
+                    </span>
+                </div>
+                <div class="search-wrapper">
+                    <input class="search-txt" type="text" name="search" placeholder="Search here...">
+                    <a class="search-btn" href="#">
+                        <span class="la la-search"></span>
+                    </a>
+                </div>
+            </div>
+            <div class="abc">
+                <div class="calender">
+                    <h1>
+                        <label>
+                            <span class="la la-calendar"></span>
+                        </label>
+                    </h1>
+                </div>
+                <div class="logout">
+                    <h1>
+                        <a href="index.html">
+                            <span class="la la-sign-out"></span>
+                        </a>
+                    </h1>
+                </div>
+            </div>
+        </div>
+        <div class="main" id="main">
+            <div class="directory">
+                <div class="page-name">
+                    <h2>
+                        Dashboard
+                    </h2>
+                    <h3>
+                        <span class="la la-home"></span>
+                        <span>/ Dashboard</span>
+                    </h3>
+                </div>
+                <div class="visitors">
+                    <div class="text">
+                        <h3>
+                            Visitors
+                        </h3>
+                        <h2>
+                            <span class="la la-user-circle"></span>
+                            <span>1,686</span>
+                        </h2>
+                    </div>
+                    <div class="graph">
+                        <img src="download (1).png" alt='graph'>
+                    </div>
+                </div>
+            </div>
+            <div class="main2">
+                <div class="overall">
+                    <div class="boxes">
+                        <div class="first-box">
+                            <span class="la la-user-injured"></span>
+                            <div class="status1">
+                                <h3>Total Patients</h3>
+                                <h2>174</h2>
+                            </div>
+                        </div>
+                        <div class="second-box">
+                            <span class="la la-procedures"></span>
+                            <div class="status1">
+                                <h3>Operations</h3>
+                                <h2>17</h2>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="boxes">
+                        <div class="first-box">
+                            <span class="la la-user-check"></span>
+                            <div class="status1">
+                                <h3>New Patients</h3>
+                                <h2>17k</h2>
+                            </div>
+                        </div>
+                        <div class="second-box">
+                            <span class="la la-procedures"></span>
+                            <div class="status1">
+                                <h3>Surgery</h3>
+                                <h2>05</h2>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="boxes1">
+                        <div class="first-box">
+                            <span class="la la la-eye"></span>
+                            <div class="status1">
+                                <h3>Total Visitors</h3>
+                                <h2>17k</h2>
+                            </div>
+                        </div>
+                        <div class="second-box">
+                            <span class="la la la-bank"></span>
+                            <div class="status1">
+                                <h3>Revenue</h3>
+                                <h2>180k ETB</h2>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="revenue">
+                    <div class="title">
+                        <h3>Total Revenue</h3>
+                    </div>
+                    <div class="cards">
+                        <div class="card-single1">
+                            <div>
+                                <span class="la la-wallet"></span><span>712,326 ETB</span>
+                            </div>
+                            <div>
+                                <h3>Operation Income</h3>
+                            </div>
+                        </div>
+                        <div class="card-single2">
+                            <div>
+                                <span class="la la-wallet"></span><span>25,965 ETB</span>
+                            </div>
+                            <div>
+                                <h3>Pharmacy Income</h3>
+                            </div>
+                        </div>
+                        <div class="card-single3">
+                            <div>
+                                <span class="la la-wallet"></span><span>14,965 ETB</span>
+                            </div>
+                            <div>
+                                <h3>Hospital Expenses</h3>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="canvas-graph">
+                        <canvas id="myChart" style="width:100%;max-width:750px"></canvas>
+                    </div>
+                </div>
+            </div>
+            <div class="main3">
+                <div class="vistorsStat">
+                    <div class="visit-graph">
+                        <div class="title">
+                            <h3>Visitor Statitics</h3>
+                        </div>
+                        <div class="graph">
+                            <canvas id="myChart2" style="width:100%;max-width: 600px;"></canvas>
+                        </div>
+                    </div>
+                    <div class="places">
+                        <div class="text">
+                            <h2>1,694</h2>
+                            <h3>Bole</h3>
+                        </div>
+                        <div class="text1">
+                            <h2>568</h2>
+                            <h3>Yeka </h3>
+                        </div>
+                        <div class="text2">
+                            <h2>438</h2>
+                            <h3>Akakai</h3>
+                        </div>
+                        <div class="text3">
+                            <h2>845</h2>
+                            <h3>Piazza</h3>
+                        </div>
+                    </div>
+                </div>
+                <div class="to-do-list">
+                    <div class="title">
+                        <h2>Task List</h2>
+                        <h3>This Month task list</h3>
+                    </div>
+                    <div class="input-field">
+                        <input type="text" placeholder="Add your new todo">
+                        <button><span class="la la la-plus"></span></button>
+                    </div>
+                    <div class="todolist">
+                        <ul>
+                            <li>A Brief History of Anesthethetics <span class="la la-trash"></span></li>
+                            <li>Selecting the Apnea Treatment <span class="la la-trash"></span></li>
+                            <li>Using Laser Treatment <span class="la la-trash"></span></li>
+                        </ul>
+                    </div>
+                    <div class="footer">
+                        <span>You have 3 Pending tasks</span>
+                        <button>Clear all</button>
+                    </div>
+                </div>
+            </div>
+            <div class="main4">
+                <div class="title">
+                    <h2>Patients Status</h2>
+                </div>
+                <div class="table">
+                    <table class="content-table" width="100%">
+                        <thead>
+                            <tr>
+                                <td>#</td>
+                                <td>Patients</td>
+                                <td>Address</td>
+                                <td>START Date</td>
+                                <td>END Date</td>
+                                <td>Priority</td>
+                                <td>Progress</td>
+                                <td>Status</td>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>001</td>
+                                <td>John Geller</td>
+                                <td>70 Bowman St. South Windsor, CT 06074</td>
+                                <td>July 13, 2021</td>
+                                <td>July 19, 2021</td>
+                                <td>HIGH</td>
+                                <td>80% Complete</td>
+                                <td>ADMIT</td>
+                            </tr>
+                            <tr>
+                                <td>002</td>
+                                <td>Jack Bird</td>
+                                <td>123 6th St. Melbourne, FL 32904</td>
+                                <td>July 14, 2021</td>
+                                <td>July 22, 2021</td>
+                                <td>LOW</td>
+                                <td>100% Complete</td>
+                                <td>DISCHARGE</td>
+                            </tr>
+                            <tr>
+                                <td>003</td>
+                                <td>Dean Otto</td>
+                                <td>123 6th St. Melbourne, FL 32904</td>
+                                <td>July 17, 2021</td>
+                                <td>July 19, 2021</td>
+                                <td>MEDIUM</td>
+                                <td>40% Complete</td>
+                                <td>ADMIT</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+
+        </div>
+    </div>
+    <script>
+        var xValues = ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec'];
+        new Chart("myChart", {
+            type: "line",
+            data: {
+                labels: xValues,
+                datasets: [
+                {
+                    label:"Operation Income",
+                    data: [1600, 1700, 1700, 1900, 2000, 2700, 4000, 5000, 6000, 7000, 8000, 10000],
+                    borderColor: 'rgb(18, 180, 18)',
+                    fill: false
+                },  {
+                    label:"Pharmacy Income",
+                    data: [300, 700, 3000, 1000, 5000, 4000, 2000, 1000, 5000, 6000, 4000, 9000],
+                    borderColor: 'rgb(255, 174, 0)',
+                    fill: false
+                },{
+                    label:"Hospital Expenses",
+                    data: [860, 1140, 1060, 1060, 1070, 1110, 1330, 2210, 7830, 2478, 6000, 3000],
+                    borderColor: "rgb(221, 48, 48)",
+                    fill: false
+                },]
+            },
+            options: {
+                legend: {
+                    display: false
+                },
+            }
+        });
+    </script>
+    <script>
+        var xValues = ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec'];
+        var yValues = [0, 500, 3600, 900, 1300, 400, 1800, 2800, 2500, 1900, 2400, 2700];
+
+        new Chart("myChart2", {
+            type: "line",
+            data: {
+                labels: xValues,
+                datasets: [{
+                    label:'Visitors',
+                    fill: false,
+                    lineTension: 0,
+                    backgroundColor: "rgba(0,0,255,1.0)",
+                    borderColor: "rgba(0,0,255,0.1)",
+                    data: yValues
+                }]
+            },
+            options: {
+                legend: { display: false },
+            }
+        });
+
+    </script>
+    
+    <script>
+        var dropdown = document.getElementsByClassName("dropdown-btn");
+        var i;
+
+        for (i = 0; i < dropdown.length; i++) {
+            dropdown[i].addEventListener("click", function () {
+                this.classList.toggle("active");
+                var dropdownContent = this.nextElementSibling;
+                if (dropdownContent.style.display === "block") {
+                    dropdownContent.style.display = "none";
+                } else {
+                    dropdownContent.style.display = "block";
+                }
+            });
+        }
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,423 @@
+.main28 {
+    background: transparent;
+    margin-bottom: 2rem;
+    border-radius: 10px;
+    padding: 1rem 1rem 1rem 1rem;
+    display: flex;
+}
+
+.rowfix1 {
+    display: block;
+    width: 70%;
+    margin-right: 1rem;
+    height: max-content;
+}
+
+.rowfix2 {
+    width: 100%;
+    display: block;
+}
+
+.member-card {
+    box-shadow: 2px 2px 5px rgba(184, 183, 183, 0.2);
+    background: #fff;
+    border-radius: 10px;
+}
+
+.member-card .headerAb, .member-img {
+    height: 130px;
+    text-align: center;
+    vertical-align: center;
+}
+
+.member-card .headerAb {
+    color: #fff;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    background: linear-gradient(45deg, #003147, #87dbf5) !important;
+}
+
+.member-card .headerAb h3 {
+    padding-top: 50px;
+    font-size: 25px;
+    font-weight: 400;
+}
+
+.member-img img {
+    background: #fff;
+    width: 150px;
+    margin-top: -40px;
+    border: 3px solid #fff;
+    border-radius: 75px;
+    box-shadow: 0px 10px 25px 0px rgb(0 0 0 / 30%);
+    ;
+}
+
+.member-card .headerAb .body {
+    text-align: center;
+    vertical-align: center;
+}
+
+.col-12 .list-unstyled {
+    display: flex;
+}
+
+.card9 {
+    margin-top: 1rem;
+    background: #fff;
+    border-radius: 10px;
+}
+
+.member-card .body {
+    padding: 20px;
+    font-weight: 400;
+    color: #444;
+    line-height: 2rem;
+    text-align: center;
+}
+
+.body .col-12 {
+    flex: 0 0 100%;
+    max-width: 100%;
+    width: 100%;
+    min-height: 1px;
+    padding-right: 9rem;
+    padding-left: 9rem;
+}
+
+.col-12 .list-unstyled li {
+    width: 100%;
+    text-align: center;
+    margin-bottom: 1rem;
+}
+
+.col-12 .list-unstyled li a {
+    color: #777;
+}
+
+.card9 .headerAb {
+    color: #444;
+    padding: 20px;
+}
+
+.card9 .body {
+    display: block;
+    box-sizing: border-box;
+    color: #444;
+    padding: 20px;
+    font-weight: 400;
+}
+
+.card9 .body .list-unstyled {
+    margin-bottom: 1rem;
+    box-sizing: border-box;
+    display: block;
+}
+
+.card9 .body .list-unstyled li {
+    box-sizing: border-box;
+    display: block;
+    text-align: -webkit-match-parent;
+}
+
+.card9 .body .list-unstyled li .progress {
+    margin-bottom: 20px;
+    border-radius: 2px;
+    -moz-box-shadow: none;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+    background-color: #f1f1f1;
+    display: flex;
+    height: 1rem;
+    overflow: hidden;
+    font-size: .75rem;
+    background-color: #e9ecef;
+    border-radius: .25rem;
+    box-sizing: border-box;
+}
+
+.card9 .body .list-unstyled li .progress .progress-bar {
+    width: 40%;
+    transition: width 3s ease;
+    background-image: linear-gradient(45deg, rgba(255, 255, 255, .15) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, .15) 50%, rgba(255, 255, 255, .15) 75%, transparent 75%, transparent);
+    background-size: 1rem 1rem;
+    justify-content: center;
+    color: #fff;
+    box-sizing: border-box;
+    font-size: .75rem;
+    text-align: center;
+    white-space: nowrap;
+}
+
+.progress-bar-success {
+    background-color: #22af46;
+}
+
+.progress-bar-info {
+    background-color: #3C89DA;
+}
+
+.progress-bar-warning {
+    background-color: #f3ad06;
+}
+
+.progress-bar-danger {
+    background-color: #de4848;
+}
+
+.rowfix2 .card .body {
+    color: #444;
+    padding: 20px;
+    font-weight: 400;
+    display: block;
+    box-sizing: border-box;
+}
+
+.rowfix2 .card .body .nav {
+    border-bottom: 1px solid #eee;
+    display: flex;
+    flex-wrap: wrap;
+    color: #444;
+    font-weight: 400;
+}
+
+.rowfix2 .card .body .nav .nav-item {
+    display: list-item;
+    text-align: -webkit-match-parent;
+    padding: 20px;
+    font-size: 18px;
+    text-decoration: none;
+    line-height: 1.5;
+}
+
+.nav-item1 .nav-link {
+    border-bottom: 2px solid #01b2c6 !important;
+    background-color: transparent;
+    color: #01b2c6;
+    margin-right: 5px;
+    font-size: 15px;
+    padding: 7px 20px;
+    display: block;
+    box-sizing: border-box;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+.nav-item2 .nav-link {
+    margin-right: 5px;
+    color: #444;
+    font-size: 15px;
+    padding: 7px 20px;
+    background-color: transparent;
+    border-bottom: transparent;
+    display: block;
+    box-sizing: border-box;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+.nav-item2 .nav-link:hover {
+    border-bottom: 2px solid #01b2c6 !important;
+    color: #01b2c6;
+}
+
+.tab-content {
+    margin-top: 1rem!important;
+    display: block;
+    line-height: 1.5;
+    text-align: left;
+}
+
+.tab-content .active {
+    display: block;
+}
+
+.tab-content .tab-pane p {
+    margin-bottom: 1rem;
+    box-sizing: border-box;
+    -webkit-text-size-adjust: 100%;
+    -ms-text-size-adjust: 100%;
+    -ms-overflow-style: scrollbar;
+    -webkit-tap-highlight-color: transparent
+}
+
+.timeline-item {
+    padding: 2em 2em 1em 2rem;
+    border-left: 1px solid #eee;
+}
+
+.timeline-item.green .date {
+    color: #86c541;
+    margin-top: -30px;
+    margin-bottom: 10px;
+    display: block;
+}
+
+.timeline-item.warning .date {
+    color: #f5a81d;
+    margin-top: -30px;
+    margin-bottom: 10px;
+    display: block;
+}
+
+.timeline-item.warning span:last-child {
+    color: #007bff;
+    text-decoration: none;
+    background-color: transparent;
+}
+
+.timeline-item .msg {
+    margin: 15px 0;
+}
+
+.timeline-item.warning .msg p {
+    margin-top: 0;
+}
+
+.timeline-item.danger .date {
+    color: #ee2558;
+    margin-top: -30px;
+    margin-bottom: 10px;
+    display: block;
+}
+
+.timeline-item.danger .msg p {
+    margin-top: 0;
+    margin-bottom: 1rem;
+}
+
+.timeline-item.danger .msg.row {
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    margin-right: -15px;
+    margin-left: -15px;
+}
+
+.timeline-item.danger .msg.row.col-md-6 {
+    position: relative;
+    width: 100%;
+    min-height: 1px;
+    padding-right: 15px;
+    padding-left: 15px;
+}
+
+.timeline-item.danger strong {
+    font-weight: bolder;
+    margin-bottom: 1rem;
+}
+
+.timeline-item.danger table {
+    width: 100%;
+    max-width: 100%;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    background-color: transparent;
+    border-collapse: collapse;
+    text-indent: initial;
+    border-spacing: 2px;
+    border-color: grey;
+}
+
+.timeline-item.danger .msg.row.col-md-6 tbody {
+    display: table-row-group;
+    vertical-align: middle;
+    border-color: inherit;
+}
+
+.timeline-item.danger .msg.row.col-md-6 tr {
+    display: table-row;
+    vertical-align: inherit;
+    border-color: inherit;
+}
+
+.timeline-item h1, .timeline-item h2, .timeline-item h3, .timeline-item h4, .timeline-item h5, .timeline-item h6 ,.billings h6 {
+    font-size: 1.25rem;
+    margin-bottom: .5rem;
+    font-family: inherit;
+    font-weight: 500;
+    line-height: 1.2;
+    color: inherit;
+}
+.billings {
+    margin-top: 1rem;
+    background: #fff;
+    border-radius: 10px;
+    padding: 20px;
+    line-height: 1.5;
+}
+.billings h6{
+    color: #444;
+}
+
+.billings table{
+    margin-top: 1rem;
+    border-collapse: collapse;
+    font-size: 1rem;
+    min-width:100%;
+    border-radius: 5px 5px 0 0;
+    overflow: hidden;
+}
+.billings table thead tr{
+    color: #fff;
+    background: #076b99;
+    border:1px solid #f0f0f0;
+    border-bottom: 1px solid #f0f0f0;
+}
+.billings table thead td{
+    border:1px solid #f0f0f0;
+    font-weight:500;
+    padding: .5rem ;
+    font-size: .9em;
+    color:#fff;
+}
+.billings table tbody tr{
+    border-bottom: 1px solid #ddd ;
+}
+.billings table tbody tr:nth-of-type(even){
+    background-color: #f3f3f3;
+}
+.billings table tbody tr:last-of-type{
+    border-bottom: 2px solid #076b99;
+}
+.billings table tbody td{
+    border:1px solid #f0f0f0;
+    font-weight:500;
+    padding: .5rem ;
+    font-size: .9rem;
+    color:rgb(77, 74, 74);
+}
+
+.billings .primary{
+    height: 40px;
+    width:70px;
+    color: #fff;
+    border-radius: 5px;
+    font-size: 13px;
+    font-weight: 400;
+    border: none;
+    background:rgb(0, 102, 255);
+}
+.billings .secondary{
+    height: 40px;
+    width:70px;
+    color: #555;
+    border-radius: 5px;
+    font-size: 13px;
+    font-weight: 400;
+    outline: none;
+    border:1px solid #555;
+    background:transparent;
+}
+.billings .primary:hover{
+    background:#0b5acf;
+    transition: 0.4s;
+}
+.billings.secondary:hover{
+    background:#68707a;
+    color: #fff;
+    transition: 0.4s;
+}
+.buttons{
+    margin-top: 1rem;
+}

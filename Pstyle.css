@@ -1,0 +1,98 @@
+.dropdown-container {
+    display: none;
+    background-color: #022231;
+    overflow: hidden;
+    padding-left: 8px;
+    width: 300px;
+}
+.dropdown-container a{
+    padding:1rem 0px 0px 1rem;
+    margin-bottom: 1rem;
+    width: 300px;
+    height: 40px;
+}
+.dropdown-btn {
+    background: transparent;
+    border: none;
+    width: 100%;
+    position:relative;
+    display: flex;
+    width: 100%;
+    color: #fff;
+    text-decoration: none;
+    font-size: 1.1rem;
+    cursor: pointer;
+}
+
+.dropdown-btn span:first-of-type {
+    position: relative;
+    display: block;
+    min-width: 60px;
+    height: 60px;
+    font-size: 28px;
+    line-height: 60px;
+    text-align: center;
+}
+.dropdown-btn span:last-of-type {
+    padding-top: 17px;
+}
+.main23{
+    background: #fff;
+    margin-bottom: 2rem;
+    border-radius: 10px;
+    padding: 1rem 1rem 1rem 1rem;
+    display: block;
+    box-shadow: 2px 2px 5px rgba(184, 183, 183, 0.2);
+}
+.main23 .title {
+    padding-left: 1rem;
+    margin-bottom: 1rem;
+}
+
+.main23 .title h3 {
+    color: #555;
+    font-weight: 500;
+}
+.main23 .card-body {
+    margin-top: 0px;
+    overflow: hidden;
+    overflow-y: scroll;
+    max-height: 440px;
+   
+}
+.main23 .card-body:-webkit-scrollbar{
+    display: none;
+}
+.main23 .content-table{
+    margin-top: 0px;
+}
+.main23 thead tr{
+    height: 35px;
+    background: #003147;
+    border:1px solid #f0f0f0;
+    border-bottom: 1px solid #f0f0f0;
+}
+.main23 thead td{
+    height: 35px;
+    border:1px solid #f0f0f0;
+    font-weight:500;
+    padding: .5rem ;
+    font-size: .9rem;
+    color:#fff;
+}
+.main23 tbody tr{
+    border-bottom: 1px solid #ddd ;
+}
+.main23 tbody tr:nth-of-type(even){
+    background-color: #f3f3f3;
+}
+.main23 tbody tr:last-of-type{
+    border-bottom: 2px solid #003147;
+}
+.main23 tbody td{
+    border:1px solid #f0f0f0;
+    font-weight:500;
+    padding: .5rem ;
+    font-size: .9rem;
+    color:rgb(77, 74, 74);
+}

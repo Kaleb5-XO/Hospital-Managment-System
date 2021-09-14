@@ -1,0 +1,100 @@
+.main23{
+    background: transparent;
+    margin-bottom: 2rem;
+    border-radius: 10px;
+    padding: 1rem 3rem 1rem 3rem;
+    display: block;
+    box-shadow: 2px 2px 5px rgba(211, 211, 211, 0.2);
+}
+.clearfix6 {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    font-size: 14px;
+    margin-left: 0rem;
+    color: #5A5A5A;
+}
+.col-sm-123 {
+    min-height: 1px;
+    padding-right: 15px;
+    padding-left: 15px;
+}
+.col-sm-123> .card{
+    border-radius: .55rem;
+    background: #fff;
+    transition: .5s;
+    display: inline-block;
+    border: 0;
+    margin-bottom: 30px;
+    width: 200px;
+    padding: 1rem 0 1rem 0;
+    box-shadow: 0 1px 2px 0 rgb(0 0 0 / 10%);
+    flex-direction: column;
+    min-width: 0;
+    word-wrap: break-word;
+    background-color: #fff;
+    background-clip: border-box;
+    border-radius: .25rem;
+}
+.text-center {
+    text-align: center!important;
+    width: 200px;
+}
+.easy-pie-chart-1{
+    text-align: center;
+    width: 100px;
+    height:100px ;
+    display: inline-block;
+    margin-bottom: -1rem;
+}
+.mb-0 a{
+    color: #494949;
+    text-decoration: none;
+    font-size: 15px;
+    font-weight: 500;
+    margin-bottom: 1rem;
+}
+.col-sm-1234{
+    height: 253px;
+    min-height: 1px;
+    padding-right: 15px;
+    padding-left: 15px;
+}
+.col-sm-1234> .card{
+    border-radius: .55rem;
+    background: #fff;
+    transition: .5s;
+    display: inline-block;
+    border: 0;
+    align-items: center;
+    margin-bottom: 30px;
+    height: 223px;
+    width: 200px;
+    padding: 1rem 0 1rem 0;
+    box-shadow: 0 1px 2px 0 rgb(0 0 0 / 10%);
+    flex-direction: column;
+    min-width: 0;
+    word-wrap: break-word;
+    background-color: #fff;
+    background-clip: border-box;
+    border-radius: .25rem;
+}
+.col-sm-1234> .card .text-center{
+    margin-top: 2rem;
+}
+.col-sm-1234> .card .text-center h6{
+    font-size: 18px;
+    margin-bottom: .7rem;
+    font-weight: 400;
+}
+.col-sm-1234> .card .text-center button{
+    background: none;
+    border: none;
+    font-size: 25px;
+    color: #5A5A5A;
+    cursor: pointer;
+    color: #007bff;
+    background-color: transparent;
+    background-image: none;
+    border-color: #007bff;
+}

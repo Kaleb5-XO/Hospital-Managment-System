@@ -1,0 +1,378 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bill</title>
+    <link rel="stylesheet" href="APstyle.css">
+    <link rel="stylesheet" href="DBstyle.css">
+    <link rel="stylesheet" href="Pstyle.css">
+    <link rel="stylesheet" href="line-awesome-1.3.0/1.3.0/css/line-awesome.css">
+    <script src="toggleSide.js"></script>
+    <script src="Chart.js-3.3.2/Chart.js-3.3.2/package/dist/chart.js"></script>
+</head>
+
+<body>
+    <div class="sidebar" id="sidebar">
+        <div class="sidebar-brand" id="sideBrand">
+            <h2>
+                <div class="logo">
+                    <img src="icons/icons8_medical_doctor_64.png">
+                </div>
+                <div class="sideB-text">
+                    <h3>Welcome ,</h3>
+                    <h3>Dr. Chandler Bing</h3>
+                </div>
+            </h2>
+        </div>
+        <div class="status" id="Status">
+            <div class="exp1">
+                <h3>Exp</h3>
+                <h2>14</h2>
+            </div>
+            <div class="exp2">
+                <h3>Awards</h3>
+                <h2>13</h2>
+            </div>
+            <div class="exp">
+                <h3>Clients</h3>
+                <h2>213</h2>
+            </div>
+        </div>
+        <div class="sidebar-menu" id="SideMenu">
+            <ul>
+                <li>
+                    <a href="dashboard.html"><span class="la la-dashboard"></span><span>Dashboard</span></a>
+                </li>
+                <li>
+                    <a href="appointment.html"> <span class="la la-clipboard-list"></span><span>Appointment</span></a>
+                </li>
+                <li>
+                    <button class="dropdown-btn"><span class="la la-user-injured"></span><span>Patients</span>
+                    </button>
+                    <div class="dropdown-container">
+                        <a href="allPatients.html">- All Patient</a>
+                        <a href="patientHistory.html">- Patient History</a>
+                        <a href="addPatient.html">- Add Patient</a>
+                    </div>
+                </li>
+                <li>
+                <li>
+                    <button class="dropdown-btn"><span class="la la-user-nurse"></span><span>Doctors</span>
+                    </button>
+                    <div class="dropdown-container">
+                        <a href="allDoctors.html">- All Doctors</a>
+                        <a href="addDoctors.html">- Add Doctors</a>
+                    </div>
+                </li>
+                <li>
+                    <a href="#"><span class="la la la-money-bill"></span><span>Bill</span></a>
+                </li>
+            </ul>
+        </div>
+
+    </div>
+    <div class="main-content">
+        <div class="header" id="header">
+            <div class="menuSearch">
+                <div class="toggle" onclick="toggleMenu()" id="toggle">
+                    <span class="la la-bars">
+                    </span>
+                </div>
+                <div class="search-wrapper">
+                    <input class="search-txt" type="text" name="search" placeholder="Search here...">
+                    <a class="search-btn" href="#">
+                        <span class="la la-search"></span>
+                    </a>
+                </div>
+            </div>
+            <div class="abc">
+                <div class="calender">
+                    <h1>
+                        <label>
+                            <span class="la la-calendar"></span>
+                        </label>
+                    </h1>
+                </div>
+                <div class="logout">
+                    <h1>
+                        <a href="index.html">
+                            <span class="la la-sign-out"></span>
+                        </a>
+                    </h1>
+                </div>
+            </div>
+        </div>
+        <div class="main" id="main">
+            <div class="directory">
+                <div class="page-name">
+                    <h2>
+                        Bill
+                    </h2>
+                    <h3>
+                        <span class="la la-home"></span>
+                        <span>/ Bill</span>
+                    </h3>
+                </div>
+                <div class="visitors">
+                    <div class="text">
+                        <h3>
+                            Visitors
+                        </h3>
+                        <h2>
+                            <span class="la la-user-circle"></span>
+                            <span>1,686</span>
+                        </h2>
+                    </div>
+                    <div class="graph">
+                        <img src="download (1).png" alt='graph'>
+                    </div>
+                </div>
+            </div>
+            <div class="main23">
+                <div class="title">
+                    <h3>Payments List</h3>
+                </div>
+                <div class="card-body">
+                    <table class ="content-table"width= "100%">
+                        <thead class="thead-dark">
+                            <tr>
+                                <td>Bill No</td>
+                                <td>Bill date</td>
+                                <td>Patient</td>
+                                <td>Doctor</td>
+                                <td>Charges</td>
+                                <td>Tax</td>                                            
+                                <td>Discount</td>
+                                <td>Total</td>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>21</td>
+                                <td>02/21/2017</td>
+                                <td>Christina Bing</td>
+                                <td>Juan Freeman</td>
+                                <td>102</td>
+                                <td>10</td>
+                                <td>10%</td>
+                                <td>210</td>
+                            </tr>
+                            <tr>
+                                <td>17</td>
+                                <td>02/21/2017</td>
+                                <td>Christina Bing</td>
+                                <td>Juan Freeman</td>
+                                <td>102</td>
+                                <td>10</td>
+                                <td>10%</td>
+                                <td>210</td>
+                            </tr>
+                            <tr>
+                                <td>16</td>
+                                <td>02/21/2017</td>
+                                <td>Christina Bing</td>
+                                <td>Juan Freeman</td>
+                                <td>102</td>
+                                <td>10</td>
+                                <td>10%</td>
+                                <td>210</td>
+                            </tr>
+                            <tr>
+                                <td>15</td>
+                                <td>02/21/2017</td>
+                                <td>Christina Bing</td>
+                                <td>Juan Freeman</td>
+                                <td>102</td>
+                                <td>10</td>
+                                <td>10%</td>
+                                <td>210</td>
+                            </tr>
+                            <tr>
+                                <td>14</td>
+                                <td>02/21/2017</td>
+                                <td>Lori Perkins</td>
+                                <td>Juan Freeman</td>
+                                <td>102</td>
+                                <td>10</td>
+                                <td>10%</td>
+                                <td>210</td>
+                            </tr>
+                            <tr>
+                                <td>12</td>
+                                <td>02/21/2017</td>
+                                <td>Christina Bing</td>
+                                <td>Juan Freeman</td>
+                                <td>102</td>
+                                <td>10</td>
+                                <td>10%</td>
+                                <td>210</td>
+                            </tr>
+                            <tr>
+                                <td>22</td>
+                                <td>02/21/2017</td>
+                                <td>Christina Bing</td>
+                                <td>Juan Freeman</td>
+                                <td>102</td>
+                                <td>10</td>
+                                <td>10%</td>
+                                <td>210</td>
+                            </tr>
+                            <tr>
+                                <td>11</td>
+                                <td>02/21/2017</td>
+                                <td>Christina Bing</td>
+                                <td>Jessica Patterson</td>
+                                <td>102</td>
+                                <td>10</td>
+                                <td>10%</td>
+                                <td>210</td>
+                            </tr>
+                            <tr>
+                                <td>105</td>
+                                <td>02/21/2017</td>
+                                <td>Lori Perkins</td>
+                                <td>Juan Freeman</td>
+                                <td>102</td>
+                                <td>10</td>
+                                <td>10%</td>
+                                <td>210</td>
+                            </tr>
+                            <tr>
+                                <td>56</td>
+                                <td>02/21/2017</td>
+                                <td>Christina Bing</td>
+                                <td>Juan Freeman</td>
+                                <td>102</td>
+                                <td>10</td>
+                                <td>10%</td>
+                                <td>210</td>
+                            </tr>
+                            <tr>
+                                <td>34</td>
+                                <td>02/21/2017</td>
+                                <td>Christina Bing</td>
+                                <td>Jessica Patterson</td>
+                                <td>102</td>
+                                <td>10</td>
+                                <td>10%</td>
+                                <td>210</td>
+                            </tr>
+                            <tr>
+                                <td>21</td>
+                                <td>02/21/2017</td>
+                                <td>Christina Bing</td>
+                                <td>Juan Freeman</td>
+                                <td>102</td>
+                                <td>10</td>
+                                <td>10%</td>
+                                <td>210</td>
+                            </tr>
+                            <tr>
+                                <td>17</td>
+                                <td>02/21/2017</td>
+                                <td>Christina Bing</td>
+                                <td>Juan Freeman</td>
+                                <td>102</td>
+                                <td>10</td>
+                                <td>10%</td>
+                                <td>210</td>
+                            </tr>
+                            <tr>
+                                <td>16</td>
+                                <td>02/21/2017</td>
+                                <td>Christina Bing</td>
+                                <td>Juan Freeman</td>
+                                <td>102</td>
+                                <td>10</td>
+                                <td>10%</td>
+                                <td>210</td>
+                            </tr>
+                            <tr>
+                                <td>15</td>
+                                <td>02/21/2017</td>
+                                <td>Christina Bing</td>
+                                <td>Juan Freeman</td>
+                                <td>102</td>
+                                <td>10</td>
+                                <td>10%</td>
+                                <td>210</td>
+                            </tr>
+                            <tr>
+                                <td>14</td>
+                                <td>02/21/2017</td>
+                                <td>Lori Perkins</td>
+                                <td>Juan Freeman</td>
+                                <td>102</td>
+                                <td>10</td>
+                                <td>10%</td>
+                                <td>210</td>
+                            </tr>
+                            <tr>
+                                <td>12</td>
+                                <td>02/21/2017</td>
+                                <td>Christina Bing</td>
+                                <td>Juan Freeman</td>
+                                <td>102</td>
+                                <td>10</td>
+                                <td>10%</td>
+                                <td>210</td>
+                            </tr>
+                            <tr>
+                                <td>22</td>
+                                <td>02/21/2017</td>
+                                <td>Christina Bing</td>
+                                <td>Juan Freeman</td>
+                                <td>102</td>
+                                <td>10</td>
+                                <td>10%</td>
+                                <td>210</td>
+                            </tr>
+                            <tr>
+                                <td>11</td>
+                                <td>02/21/2017</td>
+                                <td>Christina Bing</td>
+                                <td>Jessica Patterson</td>
+                                <td>102</td>
+                                <td>10</td>
+                                <td>10%</td>
+                                <td>210</td>
+                            </tr>
+                            <tr>
+                                <td>105</td>
+                                <td>02/21/2017</td>
+                                <td>Lori Perkins</td>
+                                <td>Juan Freeman</td>
+                                <td>102</td>
+                                <td>10</td>
+                                <td>10%</td>
+                                <td>210</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script>
+        var dropdown = document.getElementsByClassName("dropdown-btn");
+        var i;
+
+        for (i = 0; i < dropdown.length; i++) {
+            dropdown[i].addEventListener("click", function () {
+                this.classList.toggle("active");
+                var dropdownContent = this.nextElementSibling;
+                if (dropdownContent.style.display === "block") {
+                    dropdownContent.style.display = "none";
+                } else {
+                    dropdownContent.style.display = "block";
+                }
+            });
+        }
+    </script>
+</body>
+</html>
+	
+	
